@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class MovieRepository {
 
-    private HashMap<String, Movie> movieDb;
+    private HashMap<String,Movie> movieDb;
     private HashMap<String, Director> directorDb;
     private HashMap<String, List<String>> directorMovieDb;
 
@@ -23,7 +23,7 @@ public class MovieRepository {
     }
 
     public void saveMovie(Movie movie){
-        movieDb.put(movie.getMovieName(), movie);
+        movieDb.put(movie.getName(), movie);
     }
 
     public void saveDirector(Director director){

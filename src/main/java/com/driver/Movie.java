@@ -1,25 +1,25 @@
 package com.driver;
-//String name, int durationInMinutes, double imdbRating,
-//        no-args constructor, all-args constructor and getters-setters
 public class Movie {
-    private String movieName;
+
+    private String name;
     private int durationInMinutes;
     private double imdbRating;
-    public Movie() {
+
+    public Movie(){
 
     }
-    public Movie(String movieName, int durationInMinutes, double imdbRating) {
-        this.movieName = movieName;
+    public Movie(String name, int durationInMinutes, double imdbRating) {
+        this.name = name;
         this.durationInMinutes = durationInMinutes;
         this.imdbRating = imdbRating;
     }
 
-    public String getMovieName() {
-        return movieName;
+    public String getName() {
+        return name;
     }
 
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getDurationInMinutes() {
